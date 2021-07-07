@@ -7,11 +7,13 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background: #FFF url(../images/bg.png);
     margin: 15px;
-    border: 1px solid red;
 }
 
 #container {
-background: #EDE9CC;
+    background: #EDE9CC;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
 }
 
 #topo {
@@ -28,6 +30,18 @@ background: #EDE9CC;
     top: 0;
     left: 0;
     background: url(../images/topo-imagem-principal.png) no-repeat;
+    z-index: 1;
+}
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../images/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -4000px;
 }
 
 #area-menu {
@@ -37,4 +51,37 @@ background: #EDE9CC;
     top: 0;
     right: 0;
     background: url(../images/topo-imagem-lateral.png) no-repeat;
+    z-index: 2;
+}
+
+#conteudo-menu {
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais {
+    border-bottom: 1px solid #B5AB56;
+    border-top: 1px solid #B5AB56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8B8448;
+}
+
+#menu-locais .locais {
+    float: left;
+    line-height: 2.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.reserva {
+    text-transform: uppercase;
+    background: #A29750;
+    color: #FFF5B0;
+    padding: 5px 10px;
+    float: right;
 }
